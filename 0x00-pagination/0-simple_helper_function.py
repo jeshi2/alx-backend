@@ -2,9 +2,10 @@
 """
 simpe helper function
 """
+from typing import Tuple
 
 
-def index_range(page: int, page_size: int) -> tuple[int, int]:
+def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """
     Return a tuple of start and end indices for a given page and page_size.
 
@@ -13,5 +14,5 @@ def index_range(page: int, page_size: int) -> tuple[int, int]:
         end indices for the specified page.
     """
     start_index = (page - 1) * page_size
-    end_index = page * page_size
+    end_index = start_index + page_size
     return start_index, end_index
