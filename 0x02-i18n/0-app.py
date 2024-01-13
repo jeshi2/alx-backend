@@ -9,7 +9,8 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'], strict_slashes=False)
 def index():
+    """
+    hello world
+    """
     return render_template(
-        '0-index.html',
-        title='Welcome to Holberton',
-        header='Hello world')
+        '0-index.html')
