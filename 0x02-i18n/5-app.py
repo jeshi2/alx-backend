@@ -30,7 +30,7 @@ users = {
 }
 
 
-def get_user(user_id):
+def get_user(login_as):
     """
     Get user details by user ID.
     """
@@ -65,7 +65,7 @@ def index():
     """
     hello world
     """
-    return render_template('4-index.html')
+    return render_template('5-index.html')
 
 
 if __name__ == '__main__':
